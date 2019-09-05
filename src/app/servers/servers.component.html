@@ -15,8 +15,7 @@
 <ng-template #noServer>
   <p>No Server was created</p>
 </ng-template>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
 
 <p>Assignment on data binding</p>
 <input type="text" [(ngModel)]="userName" />
